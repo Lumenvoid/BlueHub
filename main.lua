@@ -110,6 +110,8 @@ WorldTab:CreateButton({
 -- [[ PLAYER TAB ]]
 PlayerTab:CreateSection("CHARACTER MODS")
 
+local player = game.Players.LocalPlayer
+
 PlayerTab:CreateSlider({
    Name = "WalkSpeed",
    Range = {16, 400},
@@ -117,8 +119,12 @@ PlayerTab:CreateSlider({
    Suffix = "Speed",
    CurrentValue = 16,
    Callback = function(Value)
-       if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-           game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+       local character = player.Character
+       if character then
+           local humanoid = character:FindFirstChildOfClass("Humanoid")
+           if humanoid then
+               humanoid.WalkSpeed = Value
+           end
        end
    end,
 })
