@@ -1,9 +1,9 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "🐍 <b>MAMBA MENTALITY HUB</b> | V107",
-   LoadingTitle = "🐍 LEGACY HUB",
-   LoadingSubtitle = "by Mamba Mentality",
+   Name = "🟦 <b>Blue HUB</b> | V107",
+   LoadingTitle = "🟦 LEGACY HUB",
+   LoadingSubtitle = "by Lumenvoid",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = "MambaConfigs",
@@ -12,13 +12,13 @@ local Window = Rayfield:CreateWindow({
    -- [[ RAYFIELD KEY SYSTEM START ]]
    KeySystem = true,
    KeySettings = {
-      Title = "🐍 MAMBA KEY SYSTEM",
+      Title = "🟦 MAMBA KEY SYSTEM",
       Subtitle = "Join Discord for the Key",
-      Note = ":https://discord.gg/HDhES2V6",
+      Note = "https://discord.gg/HDhES2V6",
       FileName = "MambaKeyData",
       SaveKey = true, 
       GrabKeyFromSite = false,
-      Key = {"MAMBA24"}, -- Ito ang password
+      Key = {"username"}, -- Ito ang password
       Actions = {
             [1] = {
                 Text = "GET KEY (DISCORD)",
